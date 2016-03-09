@@ -7,7 +7,7 @@ coreos:
     initial-advertise-peer-urls: http://$private_ipv4:2380
     listen-client-urls: http://0.0.0.0:2379,http://0.0.0.0:4001
     listen-peer-urls: http://$private_ipv4:2380,http://$private_ipv4:7001
-    discovery: https://discovery.etcd.io/299b44c4c6846e7f847129fa215fcff8
+    discovery: https://discovery.etcd.io/4abc8672b4bf7079e492b70b51e3a4e3
   fleet:
     public-ip: "$public_ipv4"
   flannel:

@@ -1,6 +1,7 @@
 # Size of the CoreOS cluster created by Vagrant
 
 $num_instances=ENV['CLUSTER_NODES'].nil? ? 1:ENV['CLUSTER_NODES'].to_i;
+$instance_name_prefix=ENV['CLUSTER_NAME'].nil? ? "core":ENV['CLUSTER_NAME'];
 
 # Used to fetch a new discovery token for a cluster of size $num_instances
 $new_discovery_url="https://discovery.etcd.io/new?size=#{$num_instances}"
