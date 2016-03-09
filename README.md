@@ -1,11 +1,16 @@
 # coreos-docker-vagrant
 
-Create cluster of docker hosts<br/>
+Create cluster of docker hosts
 
-By default its create one node, to create more than one, set env variable :<br/>
+# Config
 
-export CLUSTER_NODES=NUMBER<br/>
+Config | Default 
+------------ | -------------
+CLUSTER_NODES | 1
+CLUSTER_NAME | core
 
-By default node name is "core", to change:<br/>
+Update: 
 
-export CLUSTER_NAME=NAME
+```sh
+$ export CLUSTER_NODES=NUMBER
+```
